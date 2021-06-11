@@ -22,8 +22,8 @@ function createSquareGrid(size) {
         container.removeChild(container.firstChild);
     }
 
-    container.style.gridTemplateRows = `repeat(${size}, auto)`;
-    container.style.gridTemplateColumns = `repeat(${size}, auto)`;
+    container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 
     for (i = 0; i < (size * size); i++) {
         const divTag = document.createElement('div');
